@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ID del Registro -->
+
+        <!-- Número de Registro -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:paddingBottom="4dp"
+            android:text="Número de Registro:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_registro_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Número de Elemento -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de Elemento:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_elemento_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Fecha de Registro -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Registro:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_fecha_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Pintura Esquema -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pintura Esquema:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_pintura_esquema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Diámetro -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diámetro:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_diametro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Esquema Pilote -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esquema Pilote:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_esquema_pilote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Pintura Base -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pintura Base:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_pintura_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Rollos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rollos:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_rollos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buzo Aplicador 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buzo Aplicador 1:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_buzo_aplicador1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buzo Aplicador 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buzo Aplicador 2:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_buzo_aplicador2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buzo Supervisor -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buzo Supervisor:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_buzo_supervisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Hidrodinámica Supervisor -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hidrodinámica Supervisor:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_hidrodinamica_supervisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Fecha de Supervisión -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Supervisión:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/txt_fecha_supervision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Al final del LinearLayout, antes del cierre </LinearLayout> -->
+        <Button
+            android:id="@+id/btn_exportar_excel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exportar a Excel"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

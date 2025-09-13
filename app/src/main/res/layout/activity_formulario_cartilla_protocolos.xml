@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioCartillaProtocolos">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Numero de registro -->
+
+            <!-- Numero de elemento -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Registro N°"
+                    android:textAlignment="gravity"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_registro_numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Número de registro"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/input_elemento_numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Número de elemento"
+                android:inputType="number" />
+
+            <!-- Fecha de registro -->
+            <EditText
+                android:id="@+id/input_fecha_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Fecha de registro"
+                android:inputType="date" />
+
+            <!-- Pintura esquema -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Esquema Pintura"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/input_pintura_esquema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp" />
+
+            <!-- Diámetro -->
+
+            <EditText
+                android:id="@+id/input_diametro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Diámetro (pulgadas)"
+                android:inputType="number" />
+
+            <!-- Esquema pilote -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Esquema Pilote"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupEsquema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Opción 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagePiloteA"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pilotea" />
+
+                    <RadioButton
+                        android:id="@+id/radPiloteA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A" />
+                </LinearLayout>
+
+                <!-- Opción 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagePiloteB"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/piloteb" />
+
+                    <RadioButton
+                        android:id="@+id/radPiloteB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B" />
+                </LinearLayout>
+
+                <!-- Opción 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagePiloteD"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/piloted" />
+
+                    <RadioButton
+                        android:id="@+id/radPiloteD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <!-- Pintura base -->
+
+            <!-- Rollos -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Pintura Base"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/input_pintura_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/input_rollos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Rollos"
+                android:inputType="number" />
+
+            <!-- Buzo aplicador 1 -->
+            <Spinner
+                android:id="@+id/input_buzo_aplicador1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp" />
+
+            <!-- Buzo aplicador 2 -->
+            <Spinner
+                android:id="@+id/input_buzo_aplicador2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp" />
+
+            <!-- Buzo supervisor -->
+            <EditText
+                android:id="@+id/input_buzo_supervisor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Buzo supervisor"
+                android:inputType="textPersonName"
+                android:text="Cristian Chianale Maucher" />
+
+            <!-- Hidrodinámica supervisor -->
+            <EditText
+                android:id="@+id/input_hidrodinamica_supervisor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Hidrodinámica supervisor"
+                android:inputType="textPersonName"
+                android:text='Cristian Chianale Maucher' />
+
+            <!-- Fecha de supervisión -->
+            <EditText
+                android:id="@+id/input_fecha_supervision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Fecha de supervisión"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar registro" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
